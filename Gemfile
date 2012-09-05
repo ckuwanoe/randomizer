@@ -2,37 +2,53 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.8'
 
-# Bundle edge Rails instead:
-# gem 'rails', :git => 'git://github.com/rails/rails.git'
-
-gem 'sqlite3'
-
+gem 'mysql2'
+gem 'devise'
+gem 'client_side_validations'
+gem 'mail'
+gem 'paperclip'
+gem 'cancan'
+gem 'kaminari'
+gem 'spreadsheet'
+gem 'exception_notification'
+gem 'lazy_high_charts'
 
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
-
-  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  # gem 'therubyracer', :platforms => :ruby
-
+  gem 'sass-rails', "  ~> 3.2.3"
+  gem 'coffee-rails', "~> 3.2.1"
   gem 'uglifier', '>= 1.0.3'
+  gem 'yui-compressor'
+  gem 'haml'
+  gem 'jquery-rails'
 end
 
-gem 'jquery-rails'
-
-# To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
-
-# To use Jbuilder templates for JSON
-# gem 'jbuilder'
-
-# Use unicorn as the app server
-# gem 'unicorn'
+# Use unicorn as the web server
+gem 'unicorn'
 
 # Deploy with Capistrano
-# gem 'capistrano'
+gem 'capistrano'
+gem 'capistrano-exts', '>=1.8.1', :require => false
+gem 'capistrano_colors'
 
-# To use debugger
-# gem 'debugger'
+group :production do
+  gem 'therubyracer'
+  gem 'exception_notification'
+end
+
+group :development do
+  gem 'bullet'
+  gem 'letter_opener'
+end
+
+gem 'will_paginate'
+gem 'populator'
+gem 'faker'
+gem 'youtube_it'
+gem 'whenever'
+gem 'clockwork'
+gem 'delayed_job_active_record'
+gem 'dj_mon'
+gem 'daemons'
+gem 'roadie'
