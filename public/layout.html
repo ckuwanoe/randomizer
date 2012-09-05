@@ -1,0 +1,862 @@
+<!doctype html public "✰">
+<!--[if lt IE 7]> <html lang="en-us" class="no-js ie6"> <![endif]-->
+<!--[if IE 7]>    <html lang="en-us" class="no-js ie7"> <![endif]-->
+<!--[if IE 8]>    <html lang="en-us" class="no-js ie8"> <![endif]-->
+<!--[if IE 9]>    <html lang="en-us" class="no-js ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en-us" class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+
+		<title>Adminica | The Professional Admin Theme</title>
+
+  		<meta name="description" content="http://themeforest.net/item/adminica-the-professional-admin-template/160638">
+  		<meta name="author" content="Oisin Lavery - Tricycle Labs">
+
+	<!-- iPhone, iPad and Android specific settings -->
+
+		<meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1;">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<link href="images/interface/iOS_icon.png" rel="apple-touch-icon">
+
+	<!-- Styles -->
+
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,700">
+
+		<link rel="stylesheet" href="styles/adminica/main.css">
+		<link rel="stylesheet" href="styles/adminica/grid.css">
+		<link rel="stylesheet" href="styles/adminica/mobile.css">
+
+		<link rel="stylesheet" href="styles/plugins/bootstrap/bootstrap.css">
+
+
+		<!-- Style Switcher
+
+		The following stylesheet links are used by the styleswitcher to allow for dynamically changing the Adminica layout, nav, skin, theme and background.
+		Styleswitcher documentation: http://style-switcher.webfactoryltd.com/documentation/
+
+		layout_switcher.php	: layout - fluid by default.								(eg. styles/themes/layout_switcher.php?default=layout_fixed.css)
+		nav_switcher.php	: header and sidebar nav  positioning - sidebar by default.	(eg. styles/themes/nav_switcher.php?default=header_top.css)
+		skin_switcher.php 	: Adminica skin - dark by default.							(eg. styles/themes/skin_switcher.php?default=theme_light.css)
+		theme_switcher.php 	: colour theme - black/grey by default.						(eg. styles/themes/theme_switcher.php?default=theme_red.css)
+		bg_switcher.php 	: background image - dark boxes by default.					(eg. styles/themes/bg_switcher.php?default=bg_honeycomb.css)	-->
+
+		<link rel="stylesheet" href="styles/themes/layout_switcher.php?default=layout_fixed.css" >
+		<link rel="stylesheet" href="styles/themes/nav_switcher.php?default=switcher" >
+		<link rel="stylesheet" href="styles/themes/skin_switcher.php?default=skin_light.css" >
+		<link rel="stylesheet" href="styles/themes/theme_switcher.php?default=theme_green.css" >
+		<link rel="stylesheet" href="styles/themes/bg_switcher.php?default=switcher.css" >
+
+		<link rel="stylesheet" href="styles/themes/switcher.css"> <!-- Styles for the styleswitcher bar  -->
+		<link rel="stylesheet" href="styles/adminica/colours.css"> <!-- this file overrides the theme's default colour scheme, allowing more colour combinations (see layout example page) -->
+
+
+		<script src="scripts/jquery/jquery.js"></script>
+		<script src="scripts/prefixfree/prefixfree.js"></script>
+		<script src="scripts/bootstrap/bootstrap.js"></script>
+
+		<script src="scripts/adminica/adminica_ui.js"></script>
+		<script src="scripts/adminica/adminica_mobile.js"></script>
+		<script src="scripts/adminica/adminica_load.js"></script>
+
+		</head>
+	<body>	<div id="pjax">
+		<div id="wrapper" data-adminica-nav-top="2" data-adminica-side-top="2" class="has_fixed_bar">
+			<div id="topbar" class="clearfix">
+
+	<a href="dashboard_sorter.php" class="logo"><span>Adminica</span></a>
+
+	<div class="user_box dark_box clearfix">
+		<img src="images/interface/profile.jpg" width="55" alt="Profile Pic" />
+		<h2>Administrator</h2>
+		<h3><a class="text_shadow" href="#">John Smith</a></h3>
+		<ul>
+			<li><a href="#">profile</a><span class="divider">|</span></li>
+			<li><a href="#">settings</a><span class="divider">|</span></li>
+			<li><a href="login_slide.php" class="dialog_button" data-dialog="dialog_logout">Logout</a></li>
+		</ul>
+	</div><!-- #user_box -->
+</div><!-- #topbar -->			<div id="sidebar" class="sidebar pjax_links fixed">
+	<div class="cog">+</div>
+
+	<a href="index.php" class="logo display_none"><span>Adminica</span></a>
+
+	<div class="user_box dark_box clearfix">
+		<img src="images/interface/profile.jpg" width="55" alt="Profile Pic" />
+		<h2>Administrator</h2>
+		<h3><a href="#">John Smith</a></h3>
+		<ul>
+			<li><a href="#">settings</a><span class="divider">|</span></li>
+			<li><a href="login_slide.php" class="dialog_button" data-dialog="dialog_logout">Logout</a></li>
+		</ul>
+	</div><!-- #user_box -->
+
+	<ul class="side_accordion" id="nav_side"> <!-- add class 'open_multiple' to change to from accordion to toggles -->
+		<li><a href="layout.php"><img src="images/icons/small/grey/laptop.png"/><span>Home</span></a></li>
+		<li><a href="layout.php"><img src="images/icons/small/grey/frames.png"/><span>Layout</span></a></li>
+		<li><a href="#"><img src="images/icons/small/grey/list.png"/><span>Base</span></a>
+			<ul class="drawer">
+				<li><a href="typography.php"><span>Typography</span></a></li>
+				<li><a href="tables.php"><span>Tables</span></a></li>
+				<li><a href="forms.php"><span>Forms</span></a></li>
+				<li><a href="buttons.php"><span>Buttons</span></a></li>
+				<li><a href="icons.php"><span>Icons</span></a></li>
+			</ul>
+		</li>
+		<li><a target="_blank" href="http://twitter.github.com/bootstrap/components.html"><img src="images/icons/small/grey/blocks_images.png"/><span>Components</span></a></li>
+		<li><a target="_blank" href="http://twitter.github.com/bootstrap/javascript.html"><img src="images/icons/small/grey/coverflow.png"/><span>Plugins</span></a></li>
+	</ul>
+
+	<div id="search_side" class="dark_box"><form><input class="" type="text" placeholder="Search Adminica..."></form></div>
+
+	<ul id="side_links" class="side_links" style="margin-bottom:0;">
+		<li><a target="_blank" href="http://twitter.github.com/bootstrap/">Bootstrap</a>
+		<li><a target="_blank" href="https://github.com/twitter/bootstrap/">Source</a></li>
+		<li><a target="_blank" href="http://tricycle.ticksy.com/">Support</a></li>
+	</ul>
+</div><!-- #sidebar -->
+			<div id="stackbar" class="stackbar">	<div class="user_box dark_box clearfix">
+		<img src="images/interface/profile.jpg" width="55" alt="Profile Pic" />
+		<h2>Administrator</h2>
+		<h3><a href="#">John Smith</a></h3>
+		<ul>
+			<li><a href="#">settings</a><span class="divider">|</span></li>
+			<li><a href="login_slide.php" class="dialog_button" data-dialog="dialog_logout">Logout</a></li>
+		</ul>
+	</div>
+	<ul class="">
+		<li>
+			<a href="#"><img src="images/icons/large/grey/computer_imac.png"/><span>Dashboard</span></a>
+			<ul>
+				<li><a href="index.php" class="pjax">Dashboard</a></li>
+				<li><a href="layout.php" class="pjax">Layout</a></li>
+				<li><a href="text.php" class="pjax">Typography</a></li>
+				<li><a href="isolated_wizard.php" class="pjax">Isolated</a></li>
+				<li><a href="logout_button.php" class="pjax">Logout</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="#"><img src="images/icons/large/grey/mail.png"/><span>Widgets</span><div class="alert_badge alert_green">1</div></a>
+			<ul>
+				<li><a href="#">Widgets</a></li>
+				<li><a href="tabs.php" class="pjax">Tabs</a></li>
+				<li><a href="accordions.php" class="pjax">Accordions</a></li>
+				<li><a href="wizard.php" class="pjax">Wizard</a></li>
+				<li><a href="code.php" class="pjax">Code View</a></li>
+				<li><a href="editor.php" class="pjax">Text Editor</a></li>
+				<li><a href="dialog.php" class="pjax">Dialogs</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="#"><img src="images/icons/large/grey/users.png"/><span>Contacts</span><div class="alert_badge alert_blue">2</div></a>
+			<ul>
+				<li><a href="#">Contacts</a></li>
+				<li><a href="contacts.php" class="pjax">Profiles</a></li>
+				<li><a href="contacts.php" class="pjax">Manage</a></li>
+				<li><a href="#" class="dialog_button" data-dialog="dialog_register">Add</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="#"><img src="images/icons/large/grey/graph.png"/><span>Reports</span></a>
+			<ul>
+				<li><a href="#" class="pjax">Reports</a></li>
+				<li><a href="charts.php" class="pjax">Graphs</a></li>
+				<li><a href="graphs.php" class="pjax">Charts</a></li>
+			</ul>
+		</li>
+	</ul>
+
+</div><!-- Closing Div for Stack Nav, you can boxes under the stack before this -->
+
+			<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container-fluid">
+      <button type="button"class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="brand" href="#" style="">Adminica Bootstrap</a>
+      <ul class="nav pull-right">
+        <li class="active dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Adminica <b class="caret"></b></a>
+			    <ul class="dropdown-menu">
+			      <li><a target="_blank" href="http://templates.tricyclelabs.com/adminica/">Regular Version</a></li>
+			      <li><a target="_blank" href="http://templates.tricyclelabs.com/adminica-bootstrap/">Bootstrap Version</a></li>
+			      <li class="divider"></li>
+			      <li><a target="_blank" href="http://themeforest.net/item/adminica-the-professional-admin-template/160638">Product Page</a></li>
+			    </ul>
+        </li>
+        <li class="divider-vertical"></li>
+        <li>
+          <a target="_blank" href="http://twitter.github.com/bootstrap/">Documentation</a>
+        </li>
+        <li class="divider-vertical"></li>
+        <li>
+          <a href="login.php">Logout</a>
+        </li>
+      </ul>
+     </div>
+  </div>
+</div>			<div id="main_container" class="main_container container_16 clearfix">
+				<div id="nav_top" class="dropdown_menu clearfix round_top">
+	<ul class="clearfix">
+		<li><a href="layout.php"><img src="images/icons/small/grey/laptop.png"/><span>Home</span></a></li>
+		<li><a href="layout.php"><img src="images/icons/small/grey/frames.png"/><span>Layout</span></a></li>
+		<li><a href="#"><img src="images/icons/small/grey/list.png"/><span>Base</span></a>
+			<ul>
+				<li><a href="typography.php"><span>Typography</span></a></li>
+				<li><a href="tables.php"><span>Tables</span></a></li>
+				<li><a href="forms.php"><span>Forms</span></a></li>
+				<li><a href="buttons.php"><span>Buttons</span></a></li>
+				<li><a href="icons.php"><span>Icons</span></a></li>
+			</ul>
+		</li>
+		<li><a target="_blank" href="http://twitter.github.com/bootstrap/components.html"><img src="images/icons/small/grey/blocks_images.png"/><span>Components</span></a></li>
+		<li><a target="_blank" href="http://twitter.github.com/bootstrap/javascript.html"><img src="images/icons/small/grey/coverflow.png"/><span>Plugins</span></a></li>
+	</ul>
+
+	<div id="mobile_nav">
+		<div class="main"></div>
+		<div class="side"></div>
+	</div>
+
+</div><!-- #nav_top -->
+								<div class="grid_16">
+			  	<div class="page-header">
+				    <h1>Grid System
+					    <small>960 fluid grid system<small>
+				    </h1>
+			  	</div>
+			  	<p>Adminica uses the 960 fluid grid system but it also includes the default Bootstrap grid system. For info <strong>check out the <a href="http://twitter.github.com/bootstrap/">Bootstrap Documentation</a></strong>.</p>
+				</div>
+
+				<div class="grid_16">
+					<div class="navbar">
+						<div class="navbar-inner">
+						  <div class="container-fluid">
+							  <ul class="nav">
+					        <li class="">
+					          <a href="#" data-toggle-class="grid_16">Grid 16</a>
+					        </li>
+					        <li class="divider-vertical"></li>
+					        <li class="">
+					          <a href="#" data-toggle-class="grid_8"">Grid 8</a>
+					        </li>
+					        <li class="divider-vertical"></li>
+					        <li>
+					          <a href="#" data-toggle-class="grid_4">Grid 4</a>
+					        </li>
+					        <li class="divider-vertical"></li>
+					        <li class="push-right">
+					          <a href="#" data-toggle-class="*">Toggle ALL</a>
+					        </li>
+					      </ul>
+						  </div>
+						</div>
+					</div>
+				</div>
+
+				<div class="box grid_16">
+					<h2 class="box_head">Grid_16</h2>
+					<div class="controls">
+						<a href="#" class="grabber"></a>
+						<a href="#" class="toggle"></a>
+					</div>
+					<div class="toggle_container">
+						<div class="block lines">
+							<div class="columns clearfix">
+								<div class="col_50 no_border_top">
+									<div class="section">
+										<p>50% content</p>
+									</div>
+								</div>
+								<div class="col_50 no_border_top no_border_right">
+									<div class="section">
+										<p>50% content</p>
+									</div>
+								</div>
+							</div>
+							<div class="columns clearfix">
+								<div class="col_50">
+									<div class="section">
+										<p>50% content</p>
+									</div>
+								</div>
+								<div class="col_50 no_border_right">
+									<div class="section">
+										<p>50% content</p>
+									</div>
+								</div>
+							</div>
+							<div class="columns clearfix shade">
+								<div class="col_66">
+									<div class="col_50">
+										<div class="section">
+											<p>33% content</p>
+										</div>
+									</div>
+									<div class="col_50 no_border_right">
+										<div class="section">
+											<p>33% content</p>
+										</div>
+									</div>
+									<div class="col_100">
+										<div class="section">
+											<p>66% content</p>
+										</div>
+									</div>
+									<div class="col_50">
+										<div class="section">
+											<p>33% content</p>
+										</div>
+									</div>
+									<div class="col_50 no_border_right">
+										<div class="section">
+											<p>33% content</p>
+										</div>
+									</div>
+								</div>
+								<div class="col_33 no_border_right">
+									<div class="section">
+										<p>Lots of content in this column:</p>
+										<p>33% content</p>
+										<p>33% content</p>
+									</div>
+								</div>
+							</div>
+							<div class="columns clearfix">
+								<div class="col_25">
+									<div class="section">
+										<p>25% content</p>
+									</div>
+								</div>
+								<div class="col_25">
+									<div class="section">
+										<p>25% content</p>
+									</div>
+								</div>
+								<div class="col_25">
+									<div class="section">
+										<p>25% content</p>
+									</div>
+								</div>
+								<div class="col_25 no_border_right">
+									<div class="section">
+										<p>25% content</p>
+									</div>
+								</div>
+							</div>
+							<div class="columns clearfix even clearfix">
+								<div class="col_50">
+									<div class="section">
+										<p>Lots of content in this column:</p>
+										<p>50% content</p>
+										<p>50% content</p>
+										<p>50% content</p>
+									</div>
+								</div>
+								<div class="col_50 no_border_right">
+									<div class="section">
+										<p>50% content</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="box grid_16">
+					<h2 class="box_head">Box with Button Bar</h2>
+					<div class="controls">
+						<a href="#" class="grabber"></a>
+						<a href="#" class="toggle"></a>
+					</div>
+					<div class="toggle_container">
+						<div class="block">
+							<div class="section">
+								<p>This box has a button bar - a great place to put any of the <a href="buttons.php">buttons</a> which come with Adminica.</p>
+							</div>
+							<div class="button_bar clearfix">
+								<button class="btn btn-primary">
+									<span>Submit</span>
+								</button>
+								<button class="btn btn-success">
+									<span>Save</span>
+								</button>
+								<button class="btn btn-danger send_right">
+									<span>Clear</span>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="main_container container_16 clearfix full_size">
+				<div class="box grid_16">
+					<h2 class="box_head">Full Width Content box <span>No lines dividing sections</span></h2>
+					<div class="controls">
+						<a href="#" class="grabber"></a>
+						<a href="#" class="toggle"></a>
+					</div>
+					<div class="toggle_container">
+						<div class="block">
+							<div class="columns clearfix">
+								<div class="col_50">
+									<div class="section">
+										<p>50% content</p>
+									</div>
+								</div>
+								<div class="col_50 no_border_right">
+									<div class="section">
+										<p>50% content</p>
+									</div>
+								</div>
+							</div>
+							<div class="columns clearfix">
+								<div class="col_33">
+									<div class="section">
+										<p>33% content</p>
+									</div>
+								</div>
+								<div class="col_33">
+									<div class="section">
+										<p>33% content</p>
+									</div>
+								</div>
+								<div class="col_33 no_border_right">
+									<div class="section">
+										<p>33% content</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="main_container container_16 clearfix full_size">
+				<div class="box grid_16">
+					<div class="block lines">
+						<div class="columns clearfix">
+							<div class="col_50 no_border_top">
+								<div class="section">
+									<p>50% content</p>
+								</div>
+							</div>
+							<div class="col_50 no_border_top no_border_right">
+								<div class="section">
+									<p>50% content</p>
+								</div>
+							</div>
+						</div>
+						<div class="columns clearfix">
+							<div class="col_33">
+								<div class="section">
+									<p>33% content</p>
+								</div>
+							</div>
+							<div class="col_33">
+								<div class="section">
+									<p>33% content</p>
+								</div>
+							</div>
+							<div class="col_33 no_border_right">
+								<div class="section">
+									<p>33% content</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="main_container" class="main_container container_16 clearfix">
+				<div class="box grid_8">
+					<h2 class="box_head">Grid_8</h2>
+					<div class="controls">
+						<a href="#" class="grabber"></a>
+						<a href="#" class="toggle"></a>
+					</div>
+					<div class="toggle_container">
+						<div class="block">
+							<div class="section">
+								<p>Content goes here</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="box grid_4">
+					<h2 class="box_head">Grid_4</h2>
+					<div class="controls">
+						<a href="#" class="grabber"></a>
+						<a href="#" class="toggle"></a>
+					</div>
+					<div class="toggle_container">
+						<div class="block">
+							<div class="section">
+								<p>Content goes here</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="box grid_4">
+					<h2 class="box_head">Grid_4</h2>
+					<div class="controls">
+						<a href="#" class="grabber"></a>
+						<a href="#" class="toggle"></a>
+					</div>
+					<div class="toggle_container">
+						<div class="block">
+							<div class="section">
+								<p>Content goes here</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="box light grid_8">
+					<h2 class="box_head">Grid_8</h2>
+					<div class="controls">
+						<a href="#" class="grabber"></a>
+						<a href="#" class="toggle"></a>
+					</div>
+					<div class="toggle_container">
+						<div class="block">
+							<div class="section">
+								<p>Content goes here</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="box grid_8">
+					<h2 class="box_head grad_grey_dark">Grid_8</h2>
+					<div class="controls">
+						<a href="#" class="grabber"></a>
+						<a href="#" class="toggle"></a>
+					</div>
+					<div class="toggle_container">
+						<div class="block">
+							<div class="section">
+								<p>Content goes here</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+				<div class="box grid_8">
+					<h2 class="box_head grad_black">Grid_8</h2>
+					<div class="controls">
+						<a href="#" class="grabber"></a>
+						<a href="#" class="toggle"></a>
+					</div>
+					<div class="toggle_container">
+						<div class="block">
+							<div class="section">
+								<p>Content goes here</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="box grid_8">
+					<h2 class="box_head grad_blue">Grid_8</h2>
+					<div class="controls">
+						<a href="#" class="grabber"></a>
+						<a href="#" class="toggle"></a>
+					</div>
+					<div class="toggle_container">
+						<div class="block">
+							<div class="section">
+								<p>Content goes here</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="box grid_8">
+					<h2 class="box_head grad_green">Grid_8</h2>
+					<div class="controls">
+						<a href="#" class="grabber"></a>
+						<a href="#" class="toggle"></a>
+					</div>
+					<div class="toggle_container">
+						<div class="block">
+							<div class="section">
+								<p>Content goes here</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="box grid_8">
+					<h2 class="box_head grad_magenta">Grid_8</h2>
+					<div class="controls">
+						<a href="#" class="grabber"></a>
+						<a href="#" class="toggle"></a>
+					</div>
+					<div class="toggle_container">
+						<div class="block">
+							<div class="section">
+								<p>Content goes here</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="box grid_8">
+					<h2 class="box_head grad_navy">Grid_8</h2>
+					<div class="controls">
+						<a href="#" class="grabber"></a>
+						<a href="#" class="toggle"></a>
+					</div>
+					<div class="toggle_container">
+						<div class="block">
+							<div class="section">
+								<p>Content goes here</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="box grid_8">
+					<h2 class="box_head grad_red">Grid_8</h2>
+					<div class="controls">
+						<a href="#" class="grabber"></a>
+						<a href="#" class="toggle"></a>
+					</div>
+					<div class="toggle_container">
+						<div class="block">
+							<div class="section">
+								<p>Content goes here</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="box grid_8">
+					<h2 class="box_head grad_orange">Grid_8</h2>
+					<div class="controls">
+						<a href="#" class="grabber"></a>
+						<a href="#" class="toggle"></a>
+					</div>
+					<div class="toggle_container">
+						<div class="block">
+							<div class="section">
+								<p>Content goes here</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="box grid_8">
+					<h2 class="box_head grad_brown">Grid_8</h2>
+					<div class="controls">
+						<a href="#" class="grabber"></a>
+						<a href="#" class="toggle"></a>
+					</div>
+					<div class="toggle_container">
+						<div class="block">
+							<div class="section">
+								<p>Content goes here</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+				<div class="box grid_16">
+					<h2 class="box_head round_all">Grid_16 <small>(Closed by default)</small></h2>
+					<div class="controls">
+						<a href="#" class="grabber"></a>
+						<a href="#" class="toggle toggle_closed"></a>
+					</div>
+					<div class="toggle_container" style="display:none;">
+						<div class="block">
+							<div class="section">
+								<p>Content goes here</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="box grid_8">
+					<div class="block">
+						<div class="section">
+							<p>Grid_8</p>
+						</div>
+					</div>
+				</div>
+				<div class="box grid_8">
+					<div class="block">
+						<div class="section">
+							<p>Grid_8</p>
+						</div>
+					</div>
+				</div>
+				<div class="box grid_4">
+					<div class="block">
+						<div class="section">
+							<p>Grid_4</p>
+						</div>
+					</div>
+				</div>
+				<div class="box grid_4">
+					<div class="block">
+						<div class="section">
+							<p>Grid_4</p>
+						</div>
+					</div>
+				</div>
+				<div class="box grid_8">
+					<div class="block">
+						<div class="section">
+							<p>Grid_8</p>
+						</div>
+					</div>
+				</div>
+				<div class="box grid_2">
+					<div class="block">
+						<div class="section">
+							<p>Grid_2</p>
+						</div>
+					</div>
+				</div>
+				<div class="box grid_2">
+					<div class="block">
+						<div class="section">
+							<p>Grid_2</p>
+						</div>
+					</div>
+				</div>
+				<div class="box grid_2">
+					<div class="block">
+						<div class="section">
+							<p>Grid_2</p>
+						</div>
+					</div>
+				</div>
+				<div class="box grid_2">
+					<div class="block">
+						<div class="section">
+							<p>Grid_2</p>
+						</div>
+					</div>
+				</div>
+				<div class="box grid_4">
+					<div class="block">
+						<div class="section">
+							<p>Grid_4</p>
+						</div>
+					</div>
+				</div>
+				<div class="box grid_4">
+					<div class="block">
+						<div class="section">
+							<p>Grid_4</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="grid_16">
+					<h2>Standalone Button Bar</h2>
+					<p>This should be used when you don't need a content box and just need some cool looking buttons!</p>
+				</div>
+
+				<div class="grid_16 box clearfix">
+					<div class="indented_button_bar clearfix">
+						<button class="btn btn-primary" data-toggle-class="grid_16">
+							<span>Grid 16</span>
+						</button>
+						<button class="btn btn-warning" data-toggle-class="grid_8">
+							<span>Grid 8</span>
+						</button>
+						<button class="btn btn-success" data-toggle-class="grid_4">
+							<span>Grid 4</span>
+						</button>
+						<button class="btn btn-inverse send_right" data-toggle-class="box">
+							<span>Toggle ALL</span>
+						</button>
+					</div>
+				</div>
+				<div class="grid_8">
+					<p><strong>Multicolumn text Layouts are straightforward</strong>.
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation <strong>ullamco</strong> laboris nisi ut aliquip ex ea commodo consequat.</p>
+					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat <strong>cupidatat</strong> non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+				</div>
+				<div class="grid_8">
+					<p>Multicolumn text Layouts are straightforward. Lorem ipsum dolor sit amet, <strong>consectetur</strong> adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut <strong>enim</strong> ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <strong>Excepteur</strong> sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+				</div>
+			</div>
+		</div>
+		<div class="display_none">	<div id="dialog_welcome" class="dialog_content no_dialog_titlebar wide" title="Welcome to Adminica">		<div class="block lines">			<div class="columns clearfix">				<div class="col_50 no_border_top">					<div class="section">						<h1>Adminica</h1>						<p><strong>Adminica</strong> is a <strong>cleanly coded</strong>, <strong>beautifully styled</strong>, easily <strong>customisable</strong>, <strong>cross-browser</strong> compatible <strong>Web Application Interface</strong>.</p>						<p><strong>Adminica</strong> is packed full of features, allowing you<strong> unlimited combinations</strong> of layouts, controls and styles to ensure you have a <strong>trully unique app</strong>. </p>						<p><strong>Adminica</strong>  can <strong>scale itself automatically</strong> to fit whatever screen resolution the user has. The interface<strong> works perfectly all the way down to iPhone size</strong></p>					</div>				</div>				<div class="col_50 no_border_top no_border_right">					<div class="section">						<h2>Features</h2>					</div>					<ul class="flat large text">						<li><a href="styles/themes/skin_switcher.php?style=theme_light.css">Light</a> and <a href="styles/themes/skin_switcher.php?style=switcher.css">Dark</a> Theme</li>						<li><a href="styles/themes/layout_switcher.php?style=layout_fixed.css">Fixed</a> and <a href="styles/themes/layout_switcher.php?style=switcher.css">Fluid</a> width layout</li>						<li><a href="styles/themes/nav_switcher.php?style=switcher.css">Sidebar</a>, <a href="styles/themes/nav_switcher.php?style=nav_top.css">Full Width</a>, <a href="styles/themes/nav_switcher.php?style=nav_slideout.css">Slide Menu</a> or <a href="styles/themes/nav_switcher.php?style=nav_slideout.css">Stack Menu</a>.</li>						<li class="theme_colour">							<a class="black" href="styles/themes/theme_switcher.php?style=switcher.css">								<span>Black</span></a>							<a class="blue" href="styles/themes/theme_switcher.php?style=theme_blue.css">								<span>Blue</span></a>							<a class="navy" href="styles/themes/theme_switcher.php?style=theme_navy.css">								<span>Navy</span></a>							<a class="red" href="styles/themes/theme_switcher.php?style=theme_red.css">								<span>Red</span></a>							<a class="green" href="styles/themes/theme_switcher.php?style=theme_green.css">								<span>Green</span></a>							<a class="magenta" href="styles/themes/theme_switcher.php?style=theme_magenta.css">								<span>Magenta</span></a>							<a class="orange" href="styles/themes/theme_switcher.php?style=theme_brown.css">								<span>Brown</span></a>						</li>					</ul>					<fieldset class="label_side label_small no_lines" style="border-top:0;">						<label>All Pages</label>						<div class="clearfix">							<div id="pagesSelect"></div>						</div>					</fieldset>				</div>			</div>			<div class="columns clearfix no_lines">				<div class="col_33">					<fieldset class="no_label">						<div class="clearfix">							<button class="full_width light">								<img src="images/icons/small/grey/book.png">								<span>Documentation</span>							</button>						</div>					</fieldset>				</div>				<div class="col_33">					<fieldset class="no_label">						<div class="clearfix">							<button class="full_width light">								<img src="images/icons/small/grey/help.png">								<span>Support Forum</span>							</button>						</div>					</fieldset>				</div>				<div class="col_33 no_border_right">					<fieldset class="no_label">						<div class="clearfix">							<button class="full_width light link_button" data-link="http://themeforest.net/user/Tricycle">								<img src="images/icons/small/grey/speech_bubble_2.png">								<span>Contact</span>							</button>						</div>					</fieldset>				</div>			</div>			<div class="columns clearfix no_lines">				<form action="http://tricycle.us2.list-manage1.com/subscribe/post?u=5edde78118439e88c2f902a8e&amp;id=8b1499c4c6" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">				<div class="col_33">					<fieldset class="label_top">						<label for="text_field_inline">Themeforest Username</label>						<div>							<input type="text" value="" name="MMERGE3" class="required" id="mce-MMERGE3">						</div>					</fieldset>				</div>				<div class="col_33">					<fieldset class="label_top">						<label for="text_field_inline">Email Address<span>required</span></label>						<div>							<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="name@example.com" required>						<div class="required_tag" title="This field is required"></div>						</div>					</fieldset>				</div>				<div class="col_33 no_border_right">					<fieldset class="label_top empty_label">						<div class="clearfix">							<button class="full_width" id="mailchimp_subscribe" onclick="$('#mc-embedded-subscribe-form').submit();"><span>Subscribe for Updates</span></button>						</div>					</fieldset>				</div>				</form>			</div>			<div class="button_bar clearfix" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">				<button class="dark blue close_dialog wide">					<div class="ui-icon ui-icon-check"></div>					<span>Submit</span>				</button>				<button class="light send_right close_dialog wide">					<div class="ui-icon ui-icon-closethick"></div>					<span>Close</span>				</button>			</div>		</div>	</div></div>		<div class="display_none">							<div id="dialog_logout" class="dialog_content narrow" title="Logout">		<div class="block">			<div class="section">				<h1>Thank you</h1>				<div class="dashed_line"></div>					<p>We will now log you out of Adminica in a 10 seconds...</p>			</div>			<div class="button_bar clearfix">				<button class="dark blue no_margin_bottom link_button" data-link="login_slide.php">					<div class="ui-icon ui-icon-check"></div>					<span>Ok</span>				</button>				<button class="light send_right close_dialog">					<div class="ui-icon ui-icon-closethick"></div>					<span>Cancel</span>				</button>			</div>		</div>	</div></div> 
+		<div id="loading_overlay">
+			<div class="loading_message round_bottom">
+				<img src="images/interface/loading.gif" alt="loading" />
+			</div>
+		</div>
+
+		<div id="template_options" class="clearfix">
+	<h3><img src="images/interface/adminica.png" alt="Adminica"></h3>
+	<div class="layout_size">
+		<label>Layout:</label>
+		<a href="styles/themes/layout_switcher.php?style=switcher.css">Fluid</a><span>|</span>
+		<a href="styles/themes/layout_switcher.php?style=layout_fixed.css">Fixed</a>
+	</div>
+	<div class="layout_position">
+		<label class="display_none">Header: </label>
+		<a href="styles/themes/nav_switcher.php?style=switcher.css">Side</a><span>|</span>
+		<a href="styles/themes/nav_switcher.php?style=nav_stacks.css">Stacks</a><span>|</span>
+		<a href="styles/themes/nav_switcher.php?style=nav_top.css">Top</a><span>|</span>
+		<a href="styles/themes/nav_switcher.php?style=nav_slideout.css">Slide</a>
+	</div>
+	<div class="layout_position">
+		<label>Theme: </label>
+		<a href="styles/themes/skin_switcher.php?style=multiple&skin_switcher.php=switcher.css&bg_switcher.php=switcher.css">Dark</a><span>|</span>
+		<a href="styles/themes/skin_switcher.php?style=multiple&skin_switcher.php=skin_light.css&bg_switcher.php=switcher.css">Light</a>
+	</div>
+	<div class="theme_colour">
+		<label class="display_none">Colour:</label>
+		<a class="black" href="styles/themes/theme_switcher.php?style=switcher.css"><span>Black</span></a>
+		<a class="blue" href="styles/themes/theme_switcher.php?style=theme_blue.css"><span>Blue</span></a>
+		<a class="navy" href="styles/themes/theme_switcher.php?style=theme_navy.css"><span>Navy</span></a>
+		<a class="red" href="styles/themes/theme_switcher.php?style=theme_red.css"><span>Red</span></a>
+		<a class="green" href="styles/themes/theme_switcher.php?style=theme_green.css"><span>Green</span></a>
+		<a class="magenta" href="styles/themes/theme_switcher.php?style=theme_magenta.css"><span>Magenta</span></a>
+		<a class="orange" href="styles/themes/theme_switcher.php?style=theme_brown.css"><span>Brown</span></a>
+	</div>
+	<div class="theme_background" id="bg_dark">
+		<label>BGs:</label>
+		<a href="styles/themes/bg_switcher.php?style=bg_wunder.css">NEW</a><span>|</span>
+		<a href="styles/themes/bg_switcher.php?style=switcher.css">Boxes</a><span>|</span>
+		<a href="styles/themes/bg_switcher.php?style=bg_punched.css">Punch</a><span>|</span>
+		<a href="styles/themes/bg_switcher.php?style=bg_honeycomb.css">Comb</a><span>|</span>
+		<a href="styles/themes/bg_switcher.php?style=bg_wood.css">Wood</a><span>|</span>
+		<a href="styles/themes/bg_switcher.php?style=bg_dark_wood.css">Timber</a><span>|</span>
+		<a href="styles/themes/bg_switcher.php?style=bg_noise.css">Noise</a>
+	</div>
+	<div class="theme_background" id="bg_light">
+		<label>BGs:</label>
+		<a href="styles/themes/bg_switcher.php?style=switcher.css">Silver</a><span>|</span>
+		<a href="styles/themes/bg_switcher.php?style=bg_white_wood.css">Wood</a><span>|</span>
+		<a href="styles/themes/bg_switcher.php?style=bg_squares.css">Square</a><span>|</span>
+		<a href="styles/themes/bg_switcher.php?style=bg_noise_zero.css">Noise</a><span>|</span>
+		<a href="styles/themes/bg_switcher.php?style=bg_stripes.css">Stripe</a>
+	</div>
+</div>
+
+
+<!--
+		<script type="text/javascript">
+
+
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-4548504-5']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+
+
+		</script>
+-->
+
+	</body>
+</html>
