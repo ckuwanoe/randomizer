@@ -9,5 +9,10 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
+ *= require main
+ *= require grid
+ *= require mobile
+ *= require theme_blue
+  *= require bootstrap_and_overrides
  *= require_tree .
  */

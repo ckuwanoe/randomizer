@@ -12,4 +12,9 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require twitter/bootstrap
+//= require prefixfree
+//= require adminica_ui
+//= require adminica_mobile
+//= require adminica_load
 //= require_tree .
